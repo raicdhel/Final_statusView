@@ -12,7 +12,7 @@ public class StatusView {
         private Long id;
         private Long orderId;
         private String orderStatus;
-        private String deliveryStatus;
+        private String desc;
 
 
         public Long getId() {
@@ -36,12 +36,12 @@ public class StatusView {
         public void setOrderStatus(String orderStatus) {
             this.orderStatus = orderStatus;
         }
-        public String getDeliveryStatus() {
-            return deliveryStatus;
+        public String getDesc() {
+            return desc;
         }
 
-        public void setDeliveryStatus(String deliveryStatus) {
-            this.deliveryStatus = deliveryStatus;
+        public void setDesc(String desc) {
+            this.desc = desc;
         }
 
 }

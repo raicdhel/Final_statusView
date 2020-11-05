@@ -60,7 +60,7 @@ public class StatusViewViewHandler {
                 List<StatusView> statusViewList = statusViewRepository.findByOrderId(delivered.getOrderId());
                 for(StatusView statusView : statusViewList){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    statusView.setDeliveryStatus(delivered.getDeliveryStatus());
+                    statusView.setOrderStatus(delivered.getDeliveryStatus());
                     // view 레파지 토리에 save
                     statusViewRepository.save(statusView);
                 }
